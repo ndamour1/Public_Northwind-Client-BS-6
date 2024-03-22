@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // event listener for check/uncheck
   document.getElementById('checkbox-card').addEventListener('change', function(e){
     if (e.target.classList.contains('form-check-input')) {
-      console.log(e);
+      alert(e.target.id)
     }
   });
 });
