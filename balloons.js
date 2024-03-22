@@ -5,4 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     autohide: true,
     format: 'MM-dd'
   });
+
+  // uncheck all boxes by default (Firefox)
+  document.querySelectorAll('.form-check-input').forEach(c => c.checked = false);
 });
