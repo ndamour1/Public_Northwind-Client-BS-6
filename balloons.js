@@ -8,4 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // uncheck all boxes by default (Firefox)
   document.querySelectorAll('.form-check-input').forEach(c => c.checked = false);
+  // event listener for check/uncheck
+  document.getElementById('checkbox-card').addEventListener('change', function(e){
+    if (e.target.classList.contains('form-check-input')) {
+      console.log(e);
+    }
+  });
 });
