@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if (toastElement.classList.contains('hide'))
             {
+                toast = this.document;
                 toast.hide();
             }
     });
