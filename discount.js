@@ -8,17 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
             bootstrap.Toast.getOrCreateInstance(document.getElementById('liveToast')).show();
           }
       });
-    document.getElementById('discount-row').addEventListener('keyup', (event) => {
+    document.getElementById('liveToast').addEventListener('keyup', (event) => {
         if (event.key === 'Escape') {
-            const toastElement = document.querySelector('discount-row');
+            const toastElement = document.querySelector('liveToast');
             if (toastElement) {
                 toastElement.classList.add('hide');
             }
         }
-        if (toastElement.classList.contains('hide'))
-            {
-                toast = this.document;
-                toast.hide();
-            }
     });
 });
